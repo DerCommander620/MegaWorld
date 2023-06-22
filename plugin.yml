@@ -1,0 +1,9 @@
+name: MegaWorld
+version: 1.0.0
+main: MegaWorld\Main
+api: [5.1.2]
+author: DerCommander610
+
+permissions:
+   megaworld.cmd.use:
+     default: op
