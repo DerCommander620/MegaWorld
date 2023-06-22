@@ -45,7 +45,7 @@ class MegaWorldCommand extends Command{
                         }
                         break;
                     case "list":
-                        $sender->sendMessage("§aList §7| §aMegaWorld§f\n§aWorlds: §e" . Server::getInstance()->getWorldManager()->getWorlds());
+                        $sender->sendMessage("§aList §7| §aMegaWorld§f\n§aWorlds: §e" . $sender->getServer()->getWorldManager()->getWorlds());
                         break;
                     case "help":
                         $sender->sendMessage("§eHelp §7| §aMegaWorld");
