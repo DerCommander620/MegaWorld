@@ -15,7 +15,7 @@ class Main extends PluginBase{
 
     public function onEnable(): void{
         Server::getInstance()->getCommandMap()->registerAll($this->getName(), $this[
-            new MegaWorldCommand()
+            new MegaWorldCommand
         ]);
     }
 }
