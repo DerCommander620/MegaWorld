@@ -43,14 +43,10 @@ class Main extends PluginBase{
                                     $sender->sendMessage("§aYou successfully Teleported ´" . $player . "´ To" . $world[1]);
                                 }
                                 break;
-                            case "list":
-                                $sender->sendMessage("§aList §7| §aMegaWorld§f\n§aWorlds: §e" . Server::getInstance()->getWorldManager()->getWorlds());
-                                break;
                             case "help":
                                 $sender->sendMessage("§eHelp §7| §aMegaWorld");
                                 $sender->sendMessage("-§c/megaworld §ecreate <WorldName> <Generator>");
                                 $sender->sendMessage("-§c/megaworld §etp <PlayerName> <WorldName>");
-                                $sender->sendMessage("-§c/megaworld §elist");
                                 $sender->sendMessage("-§c/megaworld help");
                                 $sender->sendMessage("-§c/megaworld §eduplicate <WorldName> <Generator>");
                                 $sender->sendMessage("-§c/megaworld §erename <WorldName> <newWorldName>");
