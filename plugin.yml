@@ -5,12 +5,12 @@ api: [5.1.2]
 author: DerCommander610
 commands:
   megaworld:
-  aliases:
-  - mg
-  - mworld
-  - megaw
-  description: "Create a World or duplicate!"
-  permissions: megaworld.cmd.use
+    aliases:
+    - mg
+    - mworld
+    - megaw
+    description: "Create a World or duplicate!"
+    permission: megaworld.cmd.use
 permissions:
    megaworld.cmd.use:
      default: op
