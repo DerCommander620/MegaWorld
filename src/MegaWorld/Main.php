@@ -6,6 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
+use pocketmine\world\generator\Flat;
 
 class Main extends PluginBase{
 
@@ -24,7 +25,7 @@ class Main extends PluginBase{
                                 if(empty($args[2])){
                                     $sender->sendMessage("§cPlease enter a Generator name!");
                                 }else{
-                                    Server::getInstance()->getWorldManager()->generateWorld($args([1]), $args([2]));
+                                    Server::getInstance()->getWorldManager()->generateWorld($args([1]), Flat);
                                     $sender->sendMessage("§aSuccessfully Generated the World " . $args([1]) . " §aWith the Generator: " . $args([2]));
                                 }
                                 break;
