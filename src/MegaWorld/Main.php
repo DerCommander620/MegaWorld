@@ -14,7 +14,7 @@ class Main extends PluginBase{
             case "megaworld":
                 if($sender instanceof Player){
                     if(empty($args[0])){
-                        $sender-sendMessage("§cPlease enter /megaworld help");
+                        $sender->sendMessage("§cPlease enter /megaworld help");
                     }else{
                         switch(strtolower($args[0])){
                             case "create":
