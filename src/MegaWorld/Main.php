@@ -23,9 +23,6 @@ class Main extends PluginBase{
                                 }
                                 if(empty($args[2])){
                                     $sender->sendMessage("§cPlease enter a Generator name!");
-                                }
-                                if(!$args([2])->exist()){
-                                    $sender->sendMessage("§cSorry but this Generator is not Found!");
                                 }else{
                                     Server::getInstance()->getWorldManager()->generateWorld($args([1]), $args([2]));
                                     $sender->sendMessage("§aSuccessfully Generated the World " . $args([1]) . " §aWith the Generator: " . $args([2]));
@@ -59,9 +56,6 @@ class Main extends PluginBase{
                                 $generator = $args([2]);
                                 if(!$world->exist()){
                                     $sender->sendMessage("§cThis world doesnt exist!");
-                                }
-                                if(!$generator->exist()){
-                                    $sender->sendMessage("§cThis generator doesn't exists!");
                                 }else{
                                     Server::getInstance()->getWorldManager()->generateWorld($world, $generator);
                                     $sender->sendMessage("§aWorld has been successfully Duplicated!");
