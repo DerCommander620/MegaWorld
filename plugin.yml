@@ -3,7 +3,14 @@ version: 1.0.0
 main: MegaWorld\Main
 api: [5.1.2]
 author: DerCommander610
-
+commands:
+  megaworld:
+  aliases:
+  - mg
+  - mworld
+  - megaw
+  description: "Create a World or duplicate!"
+  permissions: megaworld.cmd.use
 permissions:
    megaworld.cmd.use:
      default: op
