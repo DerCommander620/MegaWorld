@@ -25,7 +25,7 @@ class Main extends PluginBase{
                                     $sender->sendMessage("§cPlease enter a Generator name!");
                                 }else{
                                     Server::getInstance()->getWorldManager()->generateWorld($args([1]), $args([2]);
-                                    $sender->sendMessage("§aSuccessfully Generated the World " . $args([1]) . " §aWith the Generator: " . $args([2])));
+                                    $sender->sendMessage("§aSuccessfully Generated the World " . $args([1]) . " §aWith the Generator: " . $args([2]));
                                 }
                                 break;
                             case "tp":
