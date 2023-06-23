@@ -13,7 +13,9 @@ class Main extends PluginBase{
         switch($command->getName()){
             case "megaworld":
                 if($sender instanceof Player){
-                    if($sender->hasPermission("megaworld.cmd.use")){
+                    if(empty($args[0])){
+                        $sender-sendMessage("");
+                    }else{
                         switch(strtolower($args[0])){
                             case "create":
                                 if(empty($args[1])){
@@ -87,12 +89,13 @@ class Main extends PluginBase{
                                         $sender->getWorld()->setSpawnLocation($sender->getPosition());
                                         break;
                                 }
-                                break;                            
+                                break;
                         }
                     }
+                }
                 }else{
                     $sender->sendMessage("Please use it In-Game");
-                }
+            }
         }
     return true;    
     }
