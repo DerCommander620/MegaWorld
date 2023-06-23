@@ -91,8 +91,8 @@ class Main extends PluginBase{
                                 }
                                 break;
                         }
-                    }
-                }
+                     }
+                  }
                 }else{
                     $sender->sendMessage("Please use it In-Game");
             }
